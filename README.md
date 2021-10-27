@@ -1,1 +1,1 @@
-# Register-products-web
+# Register-products-web V1.0.0
