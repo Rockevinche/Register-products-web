@@ -1,0 +1,396 @@
+/* importando fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap');
+
+/* reset de estilos */
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* estilos para la seccion de registro de productos*/
+.register-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 650px auto;
+    align-items: center;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 20px 50px 20px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2%;
+    transition: all ease 0.3s;
+}
+
+.logo{
+    width: 80px;
+    transition: all ease 0.3s;
+}
+
+.register-title{
+    font-size: 30px;
+    margin-top: 45px;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+.register-form{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.register-form div label{
+    font-size: 18px;
+    position: absolute;     
+    left: 14px;
+    transition: all 0.2s ease;
+}
+
+.register-form input:focus + label, .register-form input:valid + label{
+    font-size: 15px;
+    top: 8px;
+    font-weight: bold;
+}
+
+.register-form div input{
+    width: 95%;
+    font-size: 20px;
+    background-color: #F4F9F9;
+    padding: 35px 20px 10px 15px;
+    border-radius: 8px;
+}
+
+.register-form div input:focus{
+    outline-color: #264f8b;
+}
+
+.register-form button{
+    width: 100%;
+    background-color: #3768B0;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all ease 0.1s;
+}
+
+.register-form  .alert-message{
+    background-color: rgb(255, 252, 61);
+    width: 98%;
+    padding: 7px;
+    margin: 0;
+    opacity: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.register-form button:hover {
+    background-color: #264f8b;
+    transform: scale(1.01);
+    cursor: p;
+}
+
+.right-section{
+    background-image: url('https://raw.githubusercontent.com/KevinEsc21/Images/main/PARCIAL%202%20WEB/MainPic.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* estilos para la seccion de busqueda  de productos*/
+.search-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    background-color: rgb(241, 241, 241);
+}
+
+.search-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.search-title{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.search-form input{
+    width: 35%;
+    font-size: 16px;
+    background-color: #F4F9F9;
+    padding: 13px 20px;
+}
+
+.search-form input:focus{
+    outline-color: #264f8b;
+}
+
+.search-form select{
+    width: 140px;
+    font-size: 16px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #3768B0;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-form select:focus{
+    outline: none;
+} 
+
+.search-form select:hover{
+    background-color: #264f8b;
+    transform: scale(1.01);
+    cursor: pointer;
+} 
+
+.search-form select option{
+    padding: 4px 4px;
+    border-radius: 0;
+    
+}
+
+.search-form button{
+    width: 140px;
+    font-size: 16px;
+    padding: 13px 20px;
+    color: white;
+    background-color: #3768B0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.search-form button:hover{
+    background-color: #264f8b;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.product-list{
+    width: 100%;
+    display: flex;;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product{
+    width: 350px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F9F9;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 20px 40px 20px;
+}
+
+.product-image-container{
+    margin: 30px 0;
+    height: 100px;
+    max-width: 315px;
+}
+
+.product-image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.info-container{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.info-container h3{
+    width: 85%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+.info-container p{
+    width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+    margin: 8px;
+}
+
+.info-container p span{
+    font-weight: bold;
+}
+
+/* estilos para el footer */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #264f8b;
+}
+
+.footer-container{
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-img-container{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footer-img-container img{
+    padding: 3px;
+    cursor: pointer;
+}
+
+/* Media queries */
+@media only screen and (max-width: 790px) and (min-width: 651px){
+    .right-section p{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 441px){
+    header h1{
+        font-size: 25px;
+    }
+
+    .logo{
+        width: 70px;
+    }
+
+    .register-container{
+        grid-template-columns: 100% auto;
+    }
+
+    .register-title{
+        font-size: 20px;
+    }
+
+    .register-form button{
+        font-size: 20px;
+    }
+
+    .right-section p{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    header h1{
+        font-size: 25px;
+    }
+
+    .logo{
+        width: 70px;
+    }
+
+    .register-container{
+        grid-template-columns: 100% auto;
+    }
+
+    .register-title{
+        font-size: 20px;
+    }
+
+    .register-form button{
+        font-size: 20px;
+    }
+
+    .right-section p{
+        display: none;
+    }
+
+    .product{
+        width: 90%;
+    }
+
+    .search-form select{
+        width: 100px;
+    }
+
+    .search-form button{
+        width: 120px;
+    }
+}

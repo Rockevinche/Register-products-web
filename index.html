@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Company</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/KevinEsc21/Images/main/PARCIAL%202%20WEB/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="register-container"><!--Contenedor de principal de registro-->
+        <section class="left-section"><!--Contenedor de registro-->
+            <header>
+                <img src="https://raw.githubusercontent.com/KevinEsc21/Images/4d8965481e58536b60445ca450ac2694b818e74c/PARCIAL%202%20WEB/Logo.svg" alt="Logo" class="logo">
+                <h1>Tech Company</h1>
+            </header>
+            <h2 class="register-title">Registro de productos</h2>
+            <form class="register-form" method="#">
+                <div>
+                    <input type="text" name="sku" id="i-sku" required>
+                    <label for="i-sku">SKU</label>
+                </div>
+                <div>
+                    <input type="text" name="name" id="i-name" required>
+                    <label for="i-name">Nombre</label>
+                </div>
+                <div>
+                    <input type="text" name="brand" id="i-brand" required>
+                    <label for="i-brand">Marca</label>
+                </div>
+                <div>
+                    <input type="text" name="category" id="i-category" required>
+                    <label for="i-category">Categoria</label>
+                </div>
+                <div>
+                    <input type="text" name="price" id="i-price" required>
+                    <label for="i-price">Precio</label>
+                </div>
+                <div>
+                    <input type="text" name="image" id="i-image" required>
+                    <label for="i-image">Imagen</label>
+                </div>
+                <div class="alert-message">
+                    base message!
+                </div>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section  class="right-section"> <!--Contenedor de imagen-->
+            <p>Do it better with tech!</p>
+        </section>
+    </section>
+
+    <section class="search-section">
+        <div class="search-container"> <!--Contenedor de seccion de busqueda-->
+            <h2 class="search-title">Productos</h2>
+            <form class="search-form" method="#">
+                <select name="filter">
+                    <option value="all">Todo</option>
+                    <option value="sku">SKU</option>
+                    <option value="name">Nombre</option>
+                    <option value="brand">Marca</option>
+                    <option value="category">Categoria</option>
+                    <option value="price">Precio</option>
+                </select>
+                <input type="text" name="search" id="i-search" placeholder="Buscar un producto...">
+                <button type="submit">Buscar</button>
+            </form>
+            <section class="product-list"> <!--Contenedor de productos-->
+                <!-- <article class="product">
+                    <div class="product-image-container">
+                        <img src="image.jpg" alt="Product-image">
+                    </div>
+                    <div class="info-container">
+                        <h3>Producto X</h3>
+                        <p><span>Marca: </span>lenovo</p>
+                        <p><span>Categoria: </span>Computadoras</p>
+                        <p><span>Precio: </span>$229.90</p>
+                        <p><span>SKU: </span>AB20923</p>
+                    </div>
+                </article> -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>Copyright &copy; 2021</p>
+            <div class="footer-img-container">
+                <img src="https://raw.githubusercontent.com/KevinEsc21/Images/1b16c4769d578dd94098495ee60104c750df9a26/PARCIAL%202%20WEB/Facebook.svg" alt="facebook">
+                <img src="https://raw.githubusercontent.com/KevinEsc21/Images/1b16c4769d578dd94098495ee60104c750df9a26/PARCIAL%202%20WEB/Instagram.svg" alt="instagram">
+                <img src="https://raw.githubusercontent.com/KevinEsc21/Images/1b16c4769d578dd94098495ee60104c750df9a26/PARCIAL%202%20WEB/Twitter.svg" alt="twitter">
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./assets/js/main.js"></script>
+</html>
+
