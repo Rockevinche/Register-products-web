@@ -79,7 +79,7 @@ const renderProducts = (products) => {
         <article class="product">
         <div class="product-image-container">
             <img src="${product.image}" alt="Product-image" onerror="this.onerror=null;
-            this.src='https://raw.githubusercontent.com/KevinEsc21/Images/77fe58b57a9a8dfb93a4149253bb8f62a84ca806/PARCIAL%202%20WEB/Logo.svg'">
+            this.src='https://raw.githubusercontent.com/Rockevinche/Images/27c2c2a75092a6d16c402aa28daf407e7df32583/Programaci%C3%B3n%20Web/Segundo%20Parcial/Logo.svg'">
         </div>
         <div class="info-container">
             <h3>${product.name}</h3>
